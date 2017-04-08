@@ -3,13 +3,18 @@
 # This program comes with ABSOLUTELY NO WARRANTY and is free software, you are welcome to redistribute it
 # under certain conditions, see https://www.gnu.org/licenses/gpl-3.0.en.html
 
-# super slow!
-# ported from brotli-rs to a minimal python subset and now back to standard python (unfinished)
+# super slow pure python brotli decoder, please ignore
+#
+# ported from brotli-rs to a minimal python subset and now back to standard python (but unpolished) as a side project
 #
 # usage:
-# from brotlipy import brotlidec
-# output_buffer = []
-# dec = brotlidec(input_buffer, output_buffer)  # also returns bytes(output_buffer) again
+#
+#     from brotlipython import brotlidec
+#     in = open('test.br', 'rb').read()
+#     outbuf = []
+#     dec = brotlidec(in, outbuf)  # also returns bytes(outbuf) again
+#
+# or see `./brotlipython.py --help`
 
 # @TODO:
 # look into brotlidump.py

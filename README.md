@@ -4,9 +4,9 @@ ported from brotli-rs to a minimal python subset and now back to standard python
 
 usage:
 
-    from brotlipy import brotlidec
+    from brotlipython import brotlidec
     in = open('test.br', 'rb').read()
     outbuf = []
     dec = brotlidec(in, outbuf)  # also returns bytes(outbuf) again
 
-or see `./brotlipy.py --help`
+or see `./brotlipython.py --help`
